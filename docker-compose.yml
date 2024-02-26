@@ -1,0 +1,10 @@
+version: '2'
+services:
+  coin-api:
+     container_name: coin-api
+     build:
+       context:
+       deckerfile: .:Dockerfile
+     restart: 'on-failure'
+     ports:
+      - 5000:5000
